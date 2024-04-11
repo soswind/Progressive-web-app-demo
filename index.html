@@ -11,13 +11,6 @@
   </head>
   <body>
     <h1>Hello, PWA!</h1>
-    
-    <script>
-      if ("serviceWorker" in navigator) {
-        navigator.serviceWorker.register("service-worker.js");
-      }
-    </script>
-    <script src="app.js"></script>
 
     <h2>Geolocation</h2>
     
@@ -31,6 +24,13 @@
     src="https://www.openstreetmap.org/export/embed.html?bbox=6.020507812500001%2C53.30462107510271%2C17.248535156250004%2C58.967003820180736&amp;layer=mapnik"
     style="border: 1px solid black">
     </iframe>
+    
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("service-worker.js");
+      }
+    </script>
+    <script src="app.js"></script>
    
 
   </body>
