@@ -1,5 +1,5 @@
 document 
-.querySelector('button-geolocation')
+.querySelector('#button-geolocation')
 .addEventListener('click', getGeolocation);
 
 async function getGeolocation() {
