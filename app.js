@@ -1,15 +1,15 @@
 document 
-.querySelector('#button-geolocation')
-.addEventListener('click', getGeolocation);
+.querySelector("#btn-geolocation")
+.addEventListener("click", getGeolocation);
 
 async function getGeolocation() {
-    const geolocation = document.querySelector('#geolocation');
-    const map = document.querySelector('#map');
+    const geolocation = document.querySelector("#geolocation");
+    const map = document.querySelector("#map");
 
-    geolocation.textContent = 'Getting your location...';
+    geolocation.textContent = "Getting your location...";
 
     if (!("geolocation" in navigator)) {
-        geolocation.textContent = 'Geolocation is not available';
+        geolocation.textContent = "Geolocation is not available";
         return;
     }
 
