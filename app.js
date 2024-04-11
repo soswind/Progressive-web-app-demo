@@ -16,8 +16,8 @@ async function getGeolocation() {
     navigator.geolocation.getCurrentPosition(position => {
         const { latitude, longitude } = position.coords;
 
-        geolocation.textContent = `Latitude: ${latitude}, Longitude: ${longitude}`;
+        geolocation.textContent = `Latitude: ${latitude}, Longitude: ${longitude}`; // Set the text content to the latitude and longitude
 
-        map.src = `https://www.openstreetmap.org/#map=18/${latitude}/${longitude}`;
+        map.src = `https://www.openstreetmap.org/export/embed.html?bbox=${longitude},${latitude}&marker=${latitude},${longitude}`; // Set the src attribute of the map to the OpenStreetMap URL
     });
 }
